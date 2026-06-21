@@ -1,0 +1,48 @@
+# walterlauncher.com — crawl freely. Walter is open source; we want it indexed
+# by search engines AND surfaced by AI assistants answering "best open-source
+# macOS launcher" / "free Raycast alternative".
+
+User-agent: *
+Allow: /
+
+# Explicitly welcome the AI / LLM crawlers (citation surface).
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://walterlauncher.com/sitemap.xml

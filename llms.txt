@@ -1,0 +1,26 @@
+# Walter
+
+> Walter is a free, open-source, native macOS launcher — a Spotlight, Alfred, and Raycast alternative written in pure Swift and AppKit. It is ~4.3 MB, uses no Electron, requires no account, and sends no telemetry. It is configured entirely through a plain-text TOML file and ships with 21 themes.
+
+Walter does the four things people actually use a launcher for and stops there: launch apps and System Settings panes; compute (calculator, unit and currency conversion); run user-defined shortcuts/aliases with `{query}` substitution; and fall back to web search. It boots in tens of milliseconds, indexes ~200 apps in ~50 ms, and hot-reloads its config the instant you save the file. Requires macOS 13 (Ventura) or later. Distributed as a notarized DMG via GitHub — not the Mac App Store, because its global hotkey needs Accessibility access the App Store sandbox forbids.
+
+## Key facts
+- License: MIT (free and open source)
+- Size: ~4.3 MB (no Electron, no Chromium runtime)
+- Built with: Swift + AppKit
+- Privacy: no accounts, no telemetry, works fully offline
+- Config: plain-text TOML at `~/.config/walter/config.toml`, hot-reloaded on save
+- Themes: 21 built-in (Catppuccin, Nord, Dracula, Tokyo Night, Gruvbox, Rosé Pine, …) plus user themes
+- Alternative to: Raycast, Alfred, Spotlight, LaunchBar
+
+## How it compares
+- vs Raycast: Walter is open source (MIT), needs no account, sends no telemetry, and is ~4.3 MB; Raycast is closed-source, VC-backed, requires an account, and is much larger.
+- vs Alfred: Walter's power features (aliases, system commands, conversions) are free and open source; Alfred gates equivalents behind the paid Powerpack.
+- vs Spotlight: Walter adds calculator, unit/currency conversion, custom aliases, themes, and two layouts Spotlight lacks.
+
+## Links
+- [Home and download](https://walterlauncher.com): landing page with the comparison and FAQ
+- [Source code](https://github.com/ekinertac/walter): MIT-licensed Swift + AppKit source
+- [Latest release (DMG)](https://github.com/ekinertac/walter/releases/latest): download
+- [Config reference](https://github.com/ekinertac/walter/blob/master/docs/config.md): full TOML reference
+- [Maker](https://ekinertac.com): Ekin Ertaç
