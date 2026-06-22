@@ -1,0 +1,172 @@
+<!doctype html>
+<!-- /vs-spotlight — targets "open source spotlight alternative", "spotlight alternative mac",
+     "how to replace spotlight on mac", "better than spotlight". Honest framing: Spotlight
+     wins on deep file-content search & system integration; Walter wins on speed,
+     customization, calc/conversions/aliases/themes, open source. Shares site.css. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Walter vs Spotlight — A Faster, Open-Source Spotlight Alternative</title>
+  <meta name="description" content="Walter vs Spotlight: a faster, open-source macOS launcher that adds a calculator, unit and currency conversion, custom aliases, themes, and two layouts on top of what Spotlight does. Plus how to replace Spotlight." />
+  <link rel="canonical" href="https://walterlauncher.com/vs-spotlight" />
+  <meta name="theme-color" content="#0d0c0b" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://walterlauncher.com/vs-spotlight" />
+  <meta property="og:title" content="Walter vs Spotlight — A Faster, Open-Source Alternative" />
+  <meta property="og:description" content="A faster, open-source macOS launcher that adds calculator, conversions, aliases, and themes on top of Spotlight." />
+  <meta property="og:image" content="https://walterlauncher.com/assets/walter-list.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Walter vs Spotlight — Open-Source Alternative" />
+  <meta name="twitter:description" content="Faster, customizable, open source — compared to Spotlight, plus how to replace it." />
+  <meta name="twitter:image" content="https://walterlauncher.com/assets/walter-list.png" />
+  <link rel="icon" type="image/png" href="/assets/walter-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/walter-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is there a better alternative to Spotlight?", "acceptedAnswer": { "@type": "Answer", "text": "Walter is a faster, open-source macOS launcher that keeps Spotlight's quick app launching and adds a calculator, unit and currency conversion, custom aliases, 21 themes, and two layouts — all configured in a plain-text TOML file." } },
+      { "@type": "Question", "name": "How do I replace Spotlight on my Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Download Walter, drag it to Applications, grant Accessibility access, and set its hotkey. To use Cmd+Space, turn off Spotlight's shortcut in System Settings → Keyboard → Keyboard Shortcuts → Spotlight, then set the same combo in Walter." } },
+      { "@type": "Question", "name": "Is Walter faster than Spotlight?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Walter opens in tens of milliseconds and narrows results on every keystroke with no indexing wait or spinner." } },
+      { "@type": "Question", "name": "Can I customize Spotlight?", "acceptedAnswer": { "@type": "Answer", "text": "Spotlight offers very little customization. Walter is fully configurable through a TOML file — hotkey, layout, themes, search engine, and custom aliases." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Walter", "item": "https://walterlauncher.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Walter vs Spotlight", "item": "https://walterlauncher.com/vs-spotlight" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/"><img src="/assets/walter-icon.png" alt="Walter icon — a leather butler's glove" /> Walter</a>
+      <nav class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#compare">Compare</a>
+        <a href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap"><p class="breadcrumb"><a href="/">Walter</a> / vs Spotlight</p></div>
+
+  <section class="vs-hero">
+    <div class="wrap">
+      <p class="eyebrow">Comparison</p>
+      <h1>Walter <span class="ital">vs</span> Spotlight</h1>
+      <p class="sub">Spotlight is built in and fine for the basics. Walter is <strong>faster, fully customizable, and open source</strong> — same instant app launching, plus a calculator, unit and currency conversion, custom aliases, 21 themes, and two layouts. Here's the honest comparison, and how to switch.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download Walter (free)</a>
+        <a class="btn btn-ghost" href="/">See everything Walter does →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:24px;">
+    <div class="wrap">
+      <div class="cmp-scroll stitched" style="background:var(--panel);">
+        <table class="cmp">
+          <thead><tr><th></th><th class="walter">Walter</th><th>Spotlight</th></tr></thead>
+          <tbody>
+            <tr><td>Open source</td><td class="walter win">✓ MIT</td><td class="no">Closed (Apple)</td></tr>
+            <tr><td>Price</td><td class="walter">Free</td><td>Built-in</td></tr>
+            <tr><td>App launch speed</td><td class="walter win">Opens in tens of ms</td><td>Can wait on indexing</td></tr>
+            <tr><td>Calculator</td><td class="walter">✓</td><td>✓ basic</td></tr>
+            <tr><td>Unit &amp; currency conversion</td><td class="walter win">✓ both</td><td>Partial</td></tr>
+            <tr><td>Custom aliases / shortcuts</td><td class="walter win">✓ with {query}</td><td class="no">✗</td></tr>
+            <tr><td>Themes</td><td class="walter win">21 + custom</td><td class="no">✗</td></tr>
+            <tr><td>Layouts</td><td class="walter win">List + grid</td><td class="no">Fixed</td></tr>
+            <tr><td>Configurable hotkey</td><td class="walter win">✓ any combo</td><td>Cmd+Space</td></tr>
+            <tr><td>Plain-text config</td><td class="walter win">✓ TOML</td><td class="no">✗</td></tr>
+            <tr><td>Deep file-content search</td><td>Filename search</td><td class="win">✓ full content + metadata</td></tr>
+            <tr><td>System integration (Siri, etc.)</td><td>—</td><td class="win">✓ deeply integrated</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:18px;">
+    <div class="wrap">
+      <div class="prose">
+        <h3>Why upgrade from Spotlight to Walter</h3>
+        <p>Spotlight is competent at launching apps and basic search, but it stops there and it can stall while indexing. Walter keeps the instant app launching and adds the things you keep reaching for: a real <strong>calculator</strong>, <strong>unit and currency conversion</strong>, <strong>custom aliases</strong> (open any URL, file, or shell command with a couple of letters), <strong>21 themes</strong>, and a choice of <strong>list or grid</strong> layouts. And because it's open source with a plain-text TOML config, you control all of it.</p>
+        <h3>When Spotlight is still the right tool</h3>
+        <p>Spotlight has two genuine advantages: it's <strong>built in</strong> (nothing to install) and it does <strong>deep file-content search</strong> plus tight system integration (Siri Suggestions, dictionary, system actions). Walter focuses on launching and quick computation, not full-disk content indexing. Many people run both — Walter on the main hotkey, Spotlight when they need to find text inside a document.</p>
+        <h3>How to replace Spotlight with Walter</h3>
+        <p>1. <a href="https://github.com/ekinertac/walter/releases/latest">Download Walter</a>, drag it to Applications, and grant Accessibility access when prompted (the global hotkey needs it).<br/>
+        2. To take over <strong>Cmd+Space</strong>: open System Settings → Keyboard → Keyboard Shortcuts → Spotlight and turn off "Show Spotlight search."<br/>
+        3. Set Walter's hotkey to <code style="font-family:var(--mono);color:var(--brass-hi)">Cmd+Space</code> in <code style="font-family:var(--mono);color:var(--brass-hi)">~/.config/walter/config.toml</code> (or keep the default Alt+Space). Save, and it hot-reloads instantly.</p>
+      </div>
+      <div class="verdict stitched" style="margin-top:34px;">
+        <p class="eyebrow">The short version</p>
+        <p>Need deep file-content search and zero install? Keep Spotlight. Want a faster, customizable, open-source launcher with calc, conversions, aliases, and themes? <strong>Use Walter</strong> — or run both.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head" style="text-align:center;margin:0 auto 40px;"><p class="eyebrow">Questions</p><h2>Spotlight, plainly.</h2></div>
+      <div class="faq">
+        <details class="q" open><summary>Is there a better alternative to Spotlight? <span class="plus">+</span></summary><p>Walter keeps Spotlight's instant app launching and adds a calculator, unit and currency conversion, custom aliases, 21 themes, and two layouts — all open source and configured in a TOML file.</p></details>
+        <details class="q"><summary>How do I replace Spotlight on my Mac? <span class="plus">+</span></summary><p>Download Walter, grant Accessibility access, then turn off Spotlight's shortcut in System Settings → Keyboard → Keyboard Shortcuts → Spotlight and set the same combo in Walter's config.</p></details>
+        <details class="q"><summary>Is Walter faster than Spotlight? <span class="plus">+</span></summary><p>Yes — it opens in tens of milliseconds and narrows results on every keystroke, with no indexing wait or spinner.</p></details>
+        <details class="q"><summary>Can I customize Spotlight? <span class="plus">+</span></summary><p>Barely. Walter is fully configurable — hotkey, layout, themes, search engine, and custom aliases, all in plain-text TOML.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:24px;"><p class="eyebrow">Keep comparing</p></div>
+      <div class="crosslinks">
+        <a class="crosslink stitched" href="/vs-raycast"><p class="eyebrow">Comparison</p><h3>Walter vs Raycast →</h3><p>Open source, no account, no telemetry.</p></a>
+        <a class="crosslink stitched" href="/vs-alfred"><p class="eyebrow">Comparison</p><h3>Walter vs Alfred →</h3><p>Alfred's Powerpack power, free and open source.</p></a>
+        <a class="crosslink stitched" href="/"><p class="eyebrow">Overview</p><h3>Everything Walter does →</h3><p>Features, themes, config, and the download.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="download">
+    <div class="wrap">
+      <div class="download-card stitched">
+        <img src="/assets/walter-icon.png" alt="Walter icon" />
+        <h2>Outgrow <span class="ital">Spotlight.</span></h2>
+        <p>Free, open source, 4.3 MB. macOS 13 or later. Faster launching plus calc, conversions, aliases, and themes.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download the DMG</a>
+          <a class="btn btn-ghost" href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">Star on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-inner">
+        <a class="foot-brand" href="/"><img src="/assets/walter-icon.png" alt="" /> Walter</a>
+        <nav class="foot-links">
+          <a href="/vs-raycast">vs Raycast</a>
+          <a href="/vs-alfred">vs Alfred</a>
+          <a href="/vs-spotlight">vs Spotlight</a>
+          <a href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+      <p class="foot-note">A native macOS launcher by Ekin Ertaç. MIT licensed. No Electron, no accounts, no telemetry — just Swift and a TOML file.</p>
+    </div>
+  </footer>
+</body>
+</html>

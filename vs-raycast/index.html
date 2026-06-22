@@ -1,0 +1,172 @@
+<!doctype html>
+<!-- /vs-raycast — comparison page targeting "open source raycast alternative",
+     "is raycast open source", "free raycast alternative", "raycast no account".
+     Honest framing: Raycast is genuinely good; Walter's wedge is openness,
+     no account, no telemetry, footprint. Shares /assets/site.css. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Walter vs Raycast — the Open-Source, No-Account Alternative</title>
+  <meta name="description" content="Walter vs Raycast: a native, open-source (MIT) macOS launcher with no account and no telemetry, versus Raycast's closed-source, account-required app. Honest, side-by-side comparison." />
+  <link rel="canonical" href="https://walterlauncher.com/vs-raycast" />
+  <meta name="theme-color" content="#0d0c0b" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://walterlauncher.com/vs-raycast" />
+  <meta property="og:title" content="Walter vs Raycast — the Open-Source, No-Account Alternative" />
+  <meta property="og:description" content="A native, open-source macOS launcher with no account and no telemetry, compared honestly to Raycast." />
+  <meta property="og:image" content="https://walterlauncher.com/assets/walter-list.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Walter vs Raycast — Open-Source Alternative" />
+  <meta name="twitter:description" content="Native, open-source, no account, no telemetry — compared to Raycast." />
+  <meta name="twitter:image" content="https://walterlauncher.com/assets/walter-list.png" />
+  <link rel="icon" type="image/png" href="/assets/walter-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/walter-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is Raycast open source?", "acceptedAnswer": { "@type": "Answer", "text": "No. Raycast is a closed-source, proprietary app. Walter is the open-source (MIT) alternative — you can read, fork, and audit its ~3,000 lines of Swift." } },
+      { "@type": "Question", "name": "Does Raycast use Electron?", "acceptedAnswer": { "@type": "Answer", "text": "No, Raycast is not Electron. But as of version 2.0 its interface is a React/TypeScript web view running on a Node.js runtime with a thin native host, rather than the pure Swift/AppKit app it began as. Walter is pure Swift and AppKit at about 4.3 MB." } },
+      { "@type": "Question", "name": "Is Raycast free?", "acceptedAnswer": { "@type": "Answer", "text": "Raycast's core is free but it is VC-backed and requires an account, with paid Pro and AI tiers. Walter is free and open source under the MIT license, with no account and no paid tier." } },
+      { "@type": "Question", "name": "Does Raycast require an account?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Raycast asks you to sign in. Walter requires no account and works fully offline." } },
+      { "@type": "Question", "name": "What is a good open-source alternative to Raycast?", "acceptedAnswer": { "@type": "Answer", "text": "Walter — a native macOS launcher in pure Swift and AppKit (~4.3 MB), MIT-licensed, with no account, no telemetry, and a plain-text TOML config." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Walter", "item": "https://walterlauncher.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Walter vs Raycast", "item": "https://walterlauncher.com/vs-raycast" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/"><img src="/assets/walter-icon.png" alt="Walter icon — a leather butler's glove" /> Walter</a>
+      <nav class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#compare">Compare</a>
+        <a href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap"><p class="breadcrumb"><a href="/">Walter</a> / vs Raycast</p></div>
+
+  <section class="vs-hero">
+    <div class="wrap">
+      <p class="eyebrow">Comparison</p>
+      <h1>Walter <span class="ital">vs</span> Raycast</h1>
+      <p class="sub">Raycast is a polished, native launcher with a big extension store and built-in AI. Walter is the <strong>open-source, no-account, no-telemetry</strong> alternative — ~4.3 MB of Swift you can read, fork, and keep forever. Here's the honest comparison.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download Walter (free)</a>
+        <a class="btn btn-ghost" href="/">See everything Walter does →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:24px;">
+    <div class="wrap">
+      <div class="cmp-scroll stitched" style="background:var(--panel);">
+        <table class="cmp">
+          <thead><tr><th></th><th class="walter">Walter</th><th>Raycast</th></tr></thead>
+          <tbody>
+            <tr><td>Open source</td><td class="walter win">✓ MIT</td><td class="no">Closed source</td></tr>
+            <tr><td>Price</td><td class="walter">Free, forever</td><td>Free core; paid Pro / AI</td></tr>
+            <tr><td>Account required</td><td class="walter win">None</td><td class="no">Sign-in required</td></tr>
+            <tr><td>Telemetry</td><td class="walter win">None</td><td class="no">Extensive analytics</td></tr>
+            <tr><td>Works fully offline</td><td class="walter win">✓</td><td>Core yes; AI / sync need cloud</td></tr>
+            <tr><td>App size</td><td class="walter win">4.3 MB</td><td>~100 MB+</td></tr>
+            <tr><td>UI stack</td><td class="walter win">Pure Swift / AppKit</td><td class="no">React/TS WebView + Node (v2.0)</td></tr>
+            <tr><td>Config format</td><td class="walter win">Plain-text TOML (git-friendly)</td><td class="no">GUI / cloud sync</td></tr>
+            <tr><td>Calculator / unit / currency</td><td class="walter">✓ all three</td><td>✓</td></tr>
+            <tr><td>Themes</td><td class="walter win">21 built-in + custom</td><td>Limited</td></tr>
+            <tr><td>Extension store</td><td>✗ by design</td><td class="win">✓ large ecosystem</td></tr>
+            <tr><td>Built-in AI</td><td>✗</td><td class="win">✓ (paid)</td></tr>
+            <tr><td>Can't be rug-pulled</td><td class="walter win">✓ MIT — fork it</td><td class="no">Proprietary roadmap</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:18px;">
+    <div class="wrap">
+      <div class="prose">
+        <h3>Why people switch from Raycast to Walter</h3>
+        <p>The most common reason is <strong>trust</strong>. Raycast is well-made, but it's a VC-backed, closed-source company that requires an account, collects extensive analytics, and <strong>already sells paid Pro and AI tiers</strong>. People reasonably wonder what happens to the free tier when investors need a return — there's no guarantee it stays as generous. Walter removes that question entirely: it's MIT-licensed, so even if development stopped tomorrow, you (or anyone) can keep it alive.</p>
+        <p>The second reason is <strong>footprint and what's under the hood</strong>. Walter is ~4.3 MB of pure Swift and AppKit, boots in tens of milliseconds, needs no sign-in, and never phones home. Raycast 2.0, by contrast, moved its interface to a <strong>React/TypeScript web view running on a Node.js runtime</strong> — a deliberate trade for cross-platform development. It isn't Electron, but it's no longer the lean native app it started as. Your entire Walter config is one plain-text TOML file you drop in your dotfiles; there's no extension runtime to update, no marketplace to browse — just the launcher.</p>
+        <h3>When Raycast is the better choice</h3>
+        <p>Be honest with yourself about what you need. If you rely on Raycast's <strong>extension ecosystem</strong> (Jira, Linear, GitHub, window management, clipboard history) or its <strong>built-in AI</strong>, Raycast does those things well and Walter deliberately doesn't try to. Walter is for people who want a fast, native, private launcher that does the core four things — launch, compute, shortcuts, search — and nothing it doesn't need to.</p>
+      </div>
+      <div class="verdict stitched" style="margin-top:34px;">
+        <p class="eyebrow">The short version</p>
+        <p>Want extensions and AI in one app? Use Raycast. Want a tiny, open-source, account-free launcher you fully control? <strong>Use Walter.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head" style="text-align:center;margin:0 auto 40px;"><p class="eyebrow">Questions</p><h2>Raycast, plainly.</h2></div>
+      <div class="faq">
+        <details class="q" open><summary>Is Raycast open source? <span class="plus">+</span></summary><p>No — Raycast is closed-source and proprietary. Walter is the open-source (MIT) alternative; you can read and fork all ~3,000 lines of its Swift source.</p></details>
+        <details class="q"><summary>Does Raycast use Electron? <span class="plus">+</span></summary><p>No, it isn't Electron. But since version 2.0 Raycast's UI is a React/TypeScript web view on a Node.js runtime with a thin native shell — not the pure Swift/AppKit app it started as. Walter is pure Swift + AppKit at ~4.3 MB.</p></details>
+        <details class="q"><summary>Is Raycast free? <span class="plus">+</span></summary><p>The core is free, but Raycast is VC-backed, requires an account, and sells paid Pro and AI tiers. Walter is free under the MIT license with no account and no paid tier.</p></details>
+        <details class="q"><summary>Does Raycast require an account? <span class="plus">+</span></summary><p>Yes, you sign in to use it. Walter requires no account and works fully offline.</p></details>
+        <details class="q"><summary>What's the best open-source Raycast alternative? <span class="plus">+</span></summary><p>Walter — native Swift + AppKit, ~4.3 MB, MIT-licensed, no telemetry, configured in plain-text TOML.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:24px;"><p class="eyebrow">Keep comparing</p></div>
+      <div class="crosslinks">
+        <a class="crosslink stitched" href="/vs-alfred"><p class="eyebrow">Comparison</p><h3>Walter vs Alfred →</h3><p>Alfred's Powerpack power, free and open source.</p></a>
+        <a class="crosslink stitched" href="/vs-spotlight"><p class="eyebrow">Comparison</p><h3>Walter vs Spotlight →</h3><p>The Spotlight upgrade: calc, conversions, aliases, themes.</p></a>
+        <a class="crosslink stitched" href="/"><p class="eyebrow">Overview</p><h3>Everything Walter does →</h3><p>Features, themes, config, and the download.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="download">
+    <div class="wrap">
+      <div class="download-card stitched">
+        <img src="/assets/walter-icon.png" alt="Walter icon" />
+        <h2>Try the <span class="ital">open</span> one.</h2>
+        <p>Free, open source, 4.3 MB. macOS 13 or later. No account, no telemetry, ever.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download the DMG</a>
+          <a class="btn btn-ghost" href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">Star on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-inner">
+        <a class="foot-brand" href="/"><img src="/assets/walter-icon.png" alt="" /> Walter</a>
+        <nav class="foot-links">
+          <a href="/vs-raycast">vs Raycast</a>
+          <a href="/vs-alfred">vs Alfred</a>
+          <a href="/vs-spotlight">vs Spotlight</a>
+          <a href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+      <p class="foot-note">A native macOS launcher by Ekin Ertaç. MIT licensed. No Electron, no accounts, no telemetry — just Swift and a TOML file.</p>
+    </div>
+  </footer>
+</body>
+</html>

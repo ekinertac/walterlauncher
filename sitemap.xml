@@ -6,5 +6,23 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- /vs-raycast, /vs-alfred, /vs-spotlight, /themes and theme pages get added here as they ship. -->
+  <url>
+    <loc>https://walterlauncher.com/vs-raycast</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://walterlauncher.com/vs-alfred</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://walterlauncher.com/vs-spotlight</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- /themes and theme pages get added here as they ship. -->
 </urlset>

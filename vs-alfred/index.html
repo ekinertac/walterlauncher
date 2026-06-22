@@ -1,0 +1,168 @@
+<!doctype html>
+<!-- /vs-alfred — targets "free alfred alternative", "open source alfred alternative",
+     "alfred alternative without subscription", "alfred powerpack alternative free".
+     Honest framing: Alfred is mature & powerful (Workflows); Walter's wedge is
+     free + open-source power features and git-friendly config. Shares site.css. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Walter vs Alfred — Free, Open-Source Alternative (No Powerpack)</title>
+  <meta name="description" content="Walter vs Alfred: a free, open-source (MIT) macOS launcher whose power features cost nothing, versus Alfred's paid Powerpack. Honest side-by-side comparison." />
+  <link rel="canonical" href="https://walterlauncher.com/vs-alfred" />
+  <meta name="theme-color" content="#0d0c0b" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://walterlauncher.com/vs-alfred" />
+  <meta property="og:title" content="Walter vs Alfred — Free, Open-Source Alternative" />
+  <meta property="og:description" content="A free, open-source macOS launcher whose power features cost nothing — compared honestly to Alfred and its paid Powerpack." />
+  <meta property="og:image" content="https://walterlauncher.com/assets/walter-list.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Walter vs Alfred — Free, Open-Source Alternative" />
+  <meta name="twitter:description" content="Free + open source, power features included, config in git — compared to Alfred." />
+  <meta name="twitter:image" content="https://walterlauncher.com/assets/walter-list.png" />
+  <link rel="icon" type="image/png" href="/assets/walter-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/walter-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is Alfred free?", "acceptedAnswer": { "@type": "Answer", "text": "Alfred's basic launcher is free, but its power features (Workflows, clipboard history, themes, and more) require the paid Powerpack license. Walter is free and open source under MIT, with its power features included at no cost." } },
+      { "@type": "Question", "name": "Is Alfred open source?", "acceptedAnswer": { "@type": "Answer", "text": "No. Alfred is closed-source. Walter is the open-source (MIT) alternative." } },
+      { "@type": "Question", "name": "Is there a free alternative to Alfred Powerpack?", "acceptedAnswer": { "@type": "Answer", "text": "Walter. It's a native macOS launcher whose aliases, system commands, calculator, unit and currency conversion, and themes are all free and open source — no Powerpack to buy." } },
+      { "@type": "Question", "name": "Does Walter have Alfred-style workflows?", "acceptedAnswer": { "@type": "Answer", "text": "Walter has parameterized aliases with {query} substitution for URLs, files, and shell commands. They're simpler than Alfred's full Workflows — deliberately so — but cover the common cases and live in a plain-text TOML file." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Walter", "item": "https://walterlauncher.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Walter vs Alfred", "item": "https://walterlauncher.com/vs-alfred" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/"><img src="/assets/walter-icon.png" alt="Walter icon — a leather butler's glove" /> Walter</a>
+      <nav class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#compare">Compare</a>
+        <a href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap"><p class="breadcrumb"><a href="/">Walter</a> / vs Alfred</p></div>
+
+  <section class="vs-hero">
+    <div class="wrap">
+      <p class="eyebrow">Comparison</p>
+      <h1>Walter <span class="ital">vs</span> Alfred</h1>
+      <p class="sub">Alfred is a mature, beloved launcher — and its best features live behind the paid Powerpack. Walter gives you <strong>free, open-source</strong> equivalents for the everyday power features, with your whole setup in a git-friendly TOML file. Here's the honest comparison.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download Walter (free)</a>
+        <a class="btn btn-ghost" href="/">See everything Walter does →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:24px;">
+    <div class="wrap">
+      <div class="cmp-scroll stitched" style="background:var(--panel);">
+        <table class="cmp">
+          <thead><tr><th></th><th class="walter">Walter</th><th>Alfred</th></tr></thead>
+          <tbody>
+            <tr><td>Open source</td><td class="walter win">✓ MIT</td><td class="no">Closed source</td></tr>
+            <tr><td>Price</td><td class="walter win">Free — power features included</td><td>Free base; Powerpack is paid</td></tr>
+            <tr><td>Account required</td><td class="walter">None</td><td>None</td></tr>
+            <tr><td>Telemetry</td><td class="walter">None</td><td>None / minimal</td></tr>
+            <tr><td>App size</td><td class="walter win">4.3 MB</td><td>tens of MB</td></tr>
+            <tr><td>Native (no Electron)</td><td class="walter">✓ Swift / AppKit</td><td>✓</td></tr>
+            <tr><td>Config format</td><td class="walter win">Plain-text TOML (git-friendly)</td><td class="no">GUI / .alfredpreferences</td></tr>
+            <tr><td>Aliases / shortcuts</td><td class="walter">✓ free, with {query}</td><td>✓ (Powerpack)</td></tr>
+            <tr><td>Calculator / unit / currency</td><td class="walter win">✓ free</td><td>✓ (some Powerpack)</td></tr>
+            <tr><td>Themes</td><td class="walter win">21 free + custom</td><td>✓ (Powerpack)</td></tr>
+            <tr><td>Workflows / deep automation</td><td>Simple by design</td><td class="win">✓ powerful (Powerpack)</td></tr>
+            <tr><td>Maturity</td><td>Newer, focused</td><td class="win">10+ years, very mature</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:18px;">
+    <div class="wrap">
+      <div class="prose">
+        <h3>Why people pick Walter over Alfred</h3>
+        <p>Two reasons come up most. First, <strong>price and openness</strong>: Alfred's everyday power features — themes, clipboard, snippets, richer search — are gated behind the paid Powerpack. Walter's aliases, system commands, calculator, and unit/currency conversion are all free and MIT-licensed. Second, <strong>config as code</strong>: Walter's entire setup is one plain-text TOML file you can diff, version, and drop in your dotfiles, instead of a GUI preferences pane.</p>
+        <h3>When Alfred is the better choice</h3>
+        <p>Credit where it's due: Alfred is more than a decade old, deeply polished, and its <strong>Workflows</strong> are a genuinely powerful visual automation system that Walter doesn't try to match. If you build elaborate multi-step workflows, or you've already bought the Powerpack and love it, Alfred is excellent and there's no reason to leave. Walter is for people who want the common 90% free, open, and in a text file.</p>
+      </div>
+      <div class="verdict stitched" style="margin-top:34px;">
+        <p class="eyebrow">The short version</p>
+        <p>Need powerful visual Workflows? Alfred (with Powerpack) wins. Want free, open-source power features and config in git? <strong>Use Walter.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head" style="text-align:center;margin:0 auto 40px;"><p class="eyebrow">Questions</p><h2>Alfred, plainly.</h2></div>
+      <div class="faq">
+        <details class="q" open><summary>Is Alfred free? <span class="plus">+</span></summary><p>The basic launcher is free, but the power features (Workflows, clipboard history, themes, and more) need the paid Powerpack. Walter's power features are free and open source.</p></details>
+        <details class="q"><summary>Is Alfred open source? <span class="plus">+</span></summary><p>No, Alfred is closed-source. Walter is the open-source (MIT) alternative.</p></details>
+        <details class="q"><summary>Is there a free alternative to the Alfred Powerpack? <span class="plus">+</span></summary><p>Walter — its aliases, system commands, calculator, conversions, and 21 themes are all free, with no Powerpack to purchase.</p></details>
+        <details class="q"><summary>Does Walter have Alfred-style workflows? <span class="plus">+</span></summary><p>Walter has parameterized aliases (URLs, files, shell commands with {query}) — simpler than Alfred's full Workflows by design, but they cover the everyday cases and live in plain-text TOML.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:24px;"><p class="eyebrow">Keep comparing</p></div>
+      <div class="crosslinks">
+        <a class="crosslink stitched" href="/vs-raycast"><p class="eyebrow">Comparison</p><h3>Walter vs Raycast →</h3><p>Open source, no account, no telemetry.</p></a>
+        <a class="crosslink stitched" href="/vs-spotlight"><p class="eyebrow">Comparison</p><h3>Walter vs Spotlight →</h3><p>The Spotlight upgrade: calc, conversions, aliases, themes.</p></a>
+        <a class="crosslink stitched" href="/"><p class="eyebrow">Overview</p><h3>Everything Walter does →</h3><p>Features, themes, config, and the download.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="download">
+    <div class="wrap">
+      <div class="download-card stitched">
+        <img src="/assets/walter-icon.png" alt="Walter icon" />
+        <h2>No Powerpack <span class="ital">required.</span></h2>
+        <p>Free, open source, 4.3 MB. macOS 13 or later. Every feature included, nothing to unlock.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/ekinertac/walter/releases/latest" target="_blank" rel="noopener">Download the DMG</a>
+          <a class="btn btn-ghost" href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">Star on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-inner">
+        <a class="foot-brand" href="/"><img src="/assets/walter-icon.png" alt="" /> Walter</a>
+        <nav class="foot-links">
+          <a href="/vs-raycast">vs Raycast</a>
+          <a href="/vs-alfred">vs Alfred</a>
+          <a href="/vs-spotlight">vs Spotlight</a>
+          <a href="https://github.com/ekinertac/walter" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+      <p class="foot-note">A native macOS launcher by Ekin Ertaç. MIT licensed. No Electron, no accounts, no telemetry — just Swift and a TOML file.</p>
+    </div>
+  </footer>
+</body>
+</html>
